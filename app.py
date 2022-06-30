@@ -7,7 +7,7 @@ import re
 import requests
 import os
 
-APIS = os.environ['APIS'].strip('][').split(',') 
+APIS = ["AIzaSyCZlyW2MwLyM3fglGIvU-KRl5qgI83u-9k"]
 
 URL1 = 'https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=50&fields=items/contentDetails/videoId,nextPageToken&key={}&playlistId={}&pageToken='
 URL2 = 'https://www.googleapis.com/youtube/v3/videos?&part=contentDetails&id={}&key={}&fields=items/contentDetails/duration'
